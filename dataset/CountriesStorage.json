@@ -1,0 +1,21 @@
+{
+	"name": "CountriesStorage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Countries",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
