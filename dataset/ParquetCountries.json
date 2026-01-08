@@ -1,0 +1,19 @@
+{
+	"name": "ParquetCountries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_Countries",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "mycontainer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
